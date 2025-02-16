@@ -1,4 +1,4 @@
-package main
+package linkedlist
 
 import "fmt"
 
@@ -32,13 +32,4 @@ func NewLinkedList[K comparable](data K) *LinkedList[K] {
 		data:    data,
 		pointer: nil,
 	}
-}
-
-func main() {
-	ll := NewLinkedList[int32](1)
-	ll.AppendNode(2)
-	ll.AppendNode(3)
-	ll.AppendNode(4)
-	ll.AppendNode(5)
-	ll.Print()
 }
